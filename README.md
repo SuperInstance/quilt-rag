@@ -22,7 +22,7 @@
 
 ## ✦ What is `quilt-rag`?
 
-A RAG framework where every component is a Quilt cell. The whole pipeline is a YAML sheet. Add a document, change a parameter, see results update. Different combinations are different cells — experiment without writing code.
+I built `@quilt/rag` to stop wrestling with spaghetti code whenever I needed to swap a vector store or an embedder. I chose cells over classes because classes lock you into rigid inheritance chains, whereas cells are isolated, composable blocks that you can mix and match freely. Your entire pipeline becomes a "sheet," connecting eight specific cell kinds: loaders, chunkers, embedders, vector stores, retrievers, rerankers, context builders, and generators. It comes ready for production with support for five vector stores (including Pinecone and Qdrant), five embedders (like OpenAI and local ONNX), and three rerankers. This structure makes debugging easy and upgrades painless.
 
 **Why cells, not classes?** Because RAG is fundamentally a graph: loaders feed chunkers, chunkers feed embedders, embedders feed stores, queries flow back through retrievers and rerankers to a generator. Modeling that as a graph — with reactive propagation — means you can:
 - A/B test retrievers in production by swapping one cell
