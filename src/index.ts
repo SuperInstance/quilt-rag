@@ -1,5 +1,5 @@
 /**
- * @quilt/rag — production RAG framework where every component is a cell.
+ * @superinstance/quilt-rag — production RAG framework where every component is a cell.
  *
  * 9 cell kinds:
  *   1. Loader        — loads documents
