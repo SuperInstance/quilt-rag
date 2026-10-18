@@ -1,12 +1,15 @@
 {
-  "name": "@quilt/rag",
+  "name": "@superinstance/quilt-rag",
   "version": "0.1.0",
-  "description": "Production RAG framework built on Quilt cells. Loader, chunker, embedder, vector store, retriever, reranker, generator, evaluator — every component is a cell.",
+  "description": "Production RAG framework built on Quilt cells. Loader, chunker, embedder, vector store, retriever, reranker, generator, evaluator \u2014 every component is a cell.",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "tsx --test test/*.test.ts",
@@ -30,7 +33,14 @@
     "@typescript-eslint/parser": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^8.67.0"
   },
-  "keywords": ["rag", "retrieval-augmented-generation", "vector-search", "embeddings", "quilt", "cells"],
+  "keywords": [
+    "rag",
+    "retrieval-augmented-generation",
+    "vector-search",
+    "embeddings",
+    "quilt",
+    "cells"
+  ],
   "engines": {
     "node": ">=18"
   }

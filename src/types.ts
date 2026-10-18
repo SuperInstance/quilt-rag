@@ -1,5 +1,5 @@
 /**
- * @quilt/rag — core types
+ * @superinstance/quilt-rag — core types
  *
  * Every component of a RAG pipeline is a cell. Cells have unified interfaces
  * so any cell can be swapped for any other cell of the same kind.

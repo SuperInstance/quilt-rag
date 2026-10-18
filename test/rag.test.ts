@@ -1,5 +1,5 @@
 /**
- * Tests for @quilt/rag
+ * Tests for @superinstance/quilt-rag
  *
  * Uses an in-memory embedder (random vectors) and an in-memory store
  * so tests don't need any API keys.
